@@ -53,7 +53,7 @@ h3{font-family:var(--display);font-weight:600;font-size:1.375rem;line-height:1.2
 .btn-line{border-color:currentColor;background:transparent}
 .btn-line:hover{background:var(--black);color:var(--white);border-color:var(--black)}
 .dark .btn-line:hover{background:var(--white);color:var(--black);border-color:var(--white)}
-.btn-small{min-height:2.75rem;padding:.5rem 1rem;font-size:1rem}
+.btn-small{min-height:2.75rem;padding:.5rem .9rem;font-size:1rem;white-space:nowrap}
 .cta-row{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:2rem}
 
 /* Sidhuvud */
@@ -65,7 +65,7 @@ h3{font-family:var(--display);font-weight:600;font-size:1.375rem;line-height:1.2
 .icon-btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-width:2.75rem;min-height:2.75rem;text-decoration:none;font-family:var(--display);font-weight:500;font-size:1rem}
 .icon-btn:hover{color:var(--cobalt-pale)}
 .icon-label{display:none}
-@media (max-width:420px){.brand{font-size:.9375rem;letter-spacing:.08em}.brand-dot{display:none}}
+@media (max-width:420px){.brand{font-size:.875rem;letter-spacing:.06em}.brand-dot{display:none}.btn-small{font-size:.9375rem;padding-inline:.7rem}.top-actions{gap:0}}
 @media (min-width:900px){
   .nav{display:flex;gap:2rem;margin-right:auto}
   .nav a{font-family:var(--display);font-weight:500;font-size:1.0625rem;text-decoration:none;padding:.5rem 0;border-bottom:1px solid transparent}
