@@ -65,23 +65,12 @@
   mm.add("(prefers-reduced-motion: no-preference)", function () {
     gsap.from(".js-rise", { y: 28, autoAlpha: 0, duration: 1.1, ease: "power3.out", stagger: 0.12 });
 
-    gsap.utils.toArray(".scene .layer").forEach(function (layer) {
-      var depth = parseFloat(layer.getAttribute("data-depth")) || 0.1;
-      gsap.to(layer, {
-        y: function () { return -depth * 260; },
-        ease: "none",
-        scrollTrigger: { trigger: ".hero", start: "top top", end: "bottom top", scrub: 0.6 }
-      });
-    });
-
-    gsap.fromTo(".js-tilt",
-      { rotationY: -22, rotationX: 10 },
-      { rotationY: 18, rotationX: 4, ease: "none",
-        scrollTrigger: { trigger: ".model", start: "top bottom", end: "bottom top", scrub: 0.8 } });
+    gsap.fromTo(".js-drift", { yPercent: -4 }, { yPercent: 8, ease: "none",
+      scrollTrigger: { trigger: ".hero", start: "top top", end: "bottom top", scrub: 0.6 } });
 
     gsap.fromTo(".js-pan",
-      { xPercent: 9 },
-      { xPercent: -9, ease: "none",
+      { xPercent: 0 },
+      { xPercent: -18, ease: "none",
         scrollTrigger: { trigger: ".hook", start: "top bottom", end: "bottom top", scrub: 0.8 } });
   });
 })();

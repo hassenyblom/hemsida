@@ -13,9 +13,10 @@
 <meta property="og:title" content="Ni använder redan AI. Vad ger det i timmar och kronor?">
 <meta property="og:description" content="Rådgivare och bollplank till VD. Vi börjar med ledningsgruppen. Boka 30 minuter.">
 <meta property="og:url" content="https://proximus.se/">
-<meta name="theme-color" content="#1B1530">
+<meta name="theme-color" content="#000000">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-<link rel="preload" href="assets/fonts/familjen.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/geist.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com" crossorigin>
 <link rel="stylesheet" href="assets/css/site.css">
 <script src="assets/js/vendor/gsap.min.js" defer></script>
 <script src="assets/js/vendor/ScrollTrigger.min.js" defer></script>
@@ -28,10 +29,7 @@
 <a class="skip" href="#innehall">Hoppa till innehållet</a>
 
 <header class="top" id="top">
-  <a class="brand" href="#top" aria-label="Proximus, till sidans början">
-    <svg class="brand-mark" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#5630B4"/><path d="M8 22h4v-4h4v-4h4v-4h4" fill="none" stroke="#F6C945" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    <span>Proximus</span>
-  </a>
+  <a class="brand" href="#top" aria-label="Proximus, till sidans början"><span class="brand-dot" aria-hidden="true"></span>PROXIMUS</a>
   <nav class="nav" aria-label="Huvudmeny">
     <a href="#forsta-steget">Första steget</a>
     <a href="#modellen">Modellen</a>
@@ -40,11 +38,11 @@
   </nav>
   <div class="top-actions">
     <a class="icon-btn" href="tel:+46762068081" aria-label="Ring Hans, +46 76 206 80 81">
-      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M6.6 3h3l1.5 4.2-2 1.4a12 12 0 0 0 6.3 6.3l1.4-2L21 14.4v3A2.6 2.6 0 0 1 18.4 20 15.4 15.4 0 0 1 4 5.6 2.6 2.6 0 0 1 6.6 3Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M6.6 3h3l1.5 4.2-2 1.4a12 12 0 0 0 6.3 6.3l1.4-2L21 14.4v3A2.6 2.6 0 0 1 18.4 20 15.4 15.4 0 0 1 4 5.6 2.6 2.6 0 0 1 6.6 3Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
       <span class="icon-label">+46 76 206 80 81</span>
     </a>
     <a class="icon-btn js-mail" href="#boka" data-u="hans.nyblom" data-d="proximus.se" aria-label="Mejla Hans">
-      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><rect x="3" y="5" width="18" height="14" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
     </a>
     <a class="btn btn-main btn-small" href="#boka">Boka 30 minuter</a>
   </div>
@@ -52,60 +50,23 @@
 
 <main id="innehall">
 
-<!-- HERO -->
-<section class="hero" aria-labelledby="h-hero">
+<section class="hero dark" aria-labelledby="h-hero">
+  <div class="bleed" aria-hidden="true"><img class="bleed-img js-drift" src="https://images.unsplash.com/photo-1508738102835-f1fe48178e7b?auto=format&amp;fit=crop&amp;q=68&amp;w=1200" srcset="https://images.unsplash.com/photo-1508738102835-f1fe48178e7b?auto=format&amp;fit=crop&amp;q=68&amp;w=480 480w, https://images.unsplash.com/photo-1508738102835-f1fe48178e7b?auto=format&amp;fit=crop&amp;q=68&amp;w=800 800w, https://images.unsplash.com/photo-1508738102835-f1fe48178e7b?auto=format&amp;fit=crop&amp;q=68&amp;w=1200 1200w, https://images.unsplash.com/photo-1508738102835-f1fe48178e7b?auto=format&amp;fit=crop&amp;q=68&amp;w=1600 1600w, https://images.unsplash.com/photo-1508738102835-f1fe48178e7b?auto=format&amp;fit=crop&amp;q=68&amp;w=2400 2400w" sizes="100vw" alt="" width="1600" height="1067" fetchpriority="high" decoding="async"></div>
   <div class="hero-text wrap">
     <h1 id="h-hero" class="js-rise">Ni använder redan AI.</h1>
     <p class="lead js-rise">Jag visar i timmar och kronor vad det ger. Vi börjar med ledningsgruppen.</p>
-
     <fieldset class="choose js-rise">
       <legend>Hur ser det ut hos er?</legend>
       <button type="button" class="choice" data-choose="kontor" aria-pressed="false">Hos oss jobbar de flesta på kontor.</button>
       <button type="button" class="choice" data-choose="falt" aria-pressed="false">Hos oss jobbar de flesta i fält, i produktion eller i vården.</button>
     </fieldset>
-
     <div class="cta-row js-rise">
       <a class="btn btn-main" href="#boka">Boka 30 minuter</a>
-      <a class="btn btn-ghost" href="#vagen">Se vad som passar er</a>
+      <a class="btn btn-line" href="#vagen">Se vad som passar er</a>
     </div>
-  </div>
-
-  <div class="scene" aria-hidden="true">
-    <svg class="scene-svg" viewBox="0 0 1440 620" preserveAspectRatio="xMidYMax slice" focusable="false">
-      <defs>
-        <linearGradient id="g-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F9E9C8"/><stop offset=".35" stop-color="#CFC6EE"/><stop offset="1" stop-color="#8E7BD6"/></linearGradient>
-        <radialGradient id="g-sun" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#FFF6D6"/><stop offset=".45" stop-color="#FBD979" stop-opacity=".9"/><stop offset="1" stop-color="#FBD979" stop-opacity="0"/></radialGradient>
-        <linearGradient id="g-meadow" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5E9A63"/><stop offset="1" stop-color="#2F5E45"/></linearGradient>
-        <g id="gran"><path d="M0-58 9-34H4l10 20H7l11 22H-18L-7-14h-7L-4-34h-5Z"/><rect x="-2" y="8" width="4" height="8"/></g>
-        <g id="lupin"><path d="M0 0V-46" stroke="#2F5E45" stroke-width="3" fill="none"/><path d="M0-112c9 14 13 44 9 66H-9c-4-22 0-52 9-66Z"/><path d="M-9-46c-9 4-16 12-18 22 10 0 17-6 18-14M9-46c9 4 16 12 18 22-10 0-17-6-18-14" fill="#3F7A52"/></g>
-      </defs>
-      <g class="layer" data-depth="0.08"><circle cx="1010" cy="250" r="230" fill="url(#g-sun)"/><circle cx="1010" cy="250" r="44" fill="#FFF3C4"/></g>
-      <g class="layer" data-depth="0.16" fill="#B7A9E6">
-        <path d="M-40 300c120-34 250-40 380-18 90 14 160 16 250 2 60-10 110-6 160 16H-40Z"/>
-        <path d="M1080 300c70-26 150-30 220-14 60 12 110 10 180 14Z"/>
-      </g>
-      <rect class="layer" data-depth="0.2" x="-60" y="298" width="1560" height="340" fill="url(#g-water)"/>
-      <g class="layer" data-depth="0.24" fill="#FFF3C4" opacity=".7">
-        <rect x="930" y="318" width="160" height="5" rx="2.5"/><rect x="960" y="340" width="100" height="5" rx="2.5"/><rect x="900" y="366" width="220" height="6" rx="3"/><rect x="975" y="396" width="70" height="6" rx="3"/><rect x="920" y="430" width="180" height="7" rx="3.5"/>
-      </g>
-      <g class="layer" data-depth="0.34">
-        <path d="M120 372c80-34 210-44 330-22 70 12 120 24 150 40H90Z" fill="#6E5BB8"/>
-        <g fill="#4B3A96"><use href="#gran" x="210" y="346"/><use href="#gran" x="246" y="340" transform="translate(0 0)"/><use href="#gran" x="292" y="338"/><use href="#gran" x="338" y="342"/><use href="#gran" x="392" y="350"/><use href="#gran" x="430" y="356"/></g>
-        <path d="M1150 392c50-22 130-26 200-12 40 8 70 18 100 30h-330Z" fill="#6E5BB8"/>
-        <g fill="#4B3A96"><use href="#gran" x="1230" y="372"/><use href="#gran" x="1272" y="368"/><use href="#gran" x="1318" y="374"/></g>
-        <g fill="#FFFFFF"><path d="M700 418h64l-10 12h-44Z"/><path d="M730 414V372l26 38Z"/><path d="M727 414v-34l-16 30Z" opacity=".85"/></g>
-      </g>
-      <g class="layer" data-depth="0.6">
-        <path d="M-60 520c160-50 330-64 520-40 170 22 300 6 470-26 190-36 380-30 570 30v160H-60Z" fill="url(#g-meadow)"/>
-        <g fill="#7A52D6"><use href="#lupin" x="70" y="560"/><use href="#lupin" x="210" y="548"/><use href="#lupin" x="330" y="570"/><use href="#lupin" x="1130" y="540"/><use href="#lupin" x="1290" y="556"/><use href="#lupin" x="1390" y="574"/></g>
-        <g fill="#9D7BEA"><use href="#lupin" x="130" y="590"/><use href="#lupin" x="270" y="600"/><use href="#lupin" x="1210" y="590"/><use href="#lupin" x="1340" y="610"/></g>
-        <g fill="#F6C945"><circle cx="420" cy="560" r="5"/><circle cx="470" cy="582" r="4"/><circle cx="560" cy="566" r="5"/><circle cx="930" cy="552" r="5"/><circle cx="1010" cy="572" r="4"/><circle cx="860" cy="590" r="5"/><circle cx="660" cy="596" r="4"/></g>
-      </g>
-    </svg>
   </div>
 </section>
 
-<!-- NYCKELTAL -->
 <section class="facts" aria-label="Kort om upplägget">
   <ul class="facts-list wrap">
     <li><strong>Nära 20 år</strong><span>på scen och i affärsutveckling</span></li>
@@ -115,10 +76,8 @@
   </ul>
 </section>
 
-<!-- VÄGEN -->
 <section class="path" id="vagen" aria-labelledby="h-vagen">
   <div class="wrap">
-
     <div data-only="ingen">
       <h2 id="h-vagen">Två vägar. Välj er.</h2>
       <div class="duo">
@@ -147,14 +106,11 @@
         </ul>
         <div class="cta-row">
           <a class="btn btn-main" href="#boka">Boka 30 minuter</a>
-          <a class="btn btn-ghost" href="#forsta-steget">Läs om första steget</a>
+          <a class="btn btn-line" href="#forsta-steget">Läs om första steget</a>
         </div>
         <button type="button" class="swap" data-choose="falt">Vi jobbar mest i fält. Byt väg.</button>
       </div>
-      <figure class="slot slot-photo">
-        <svg viewBox="0 0 400 300" aria-hidden="true"><rect width="400" height="300" fill="#EAE4FB"/><circle cx="150" cy="120" r="34" fill="#B7A9E6"/><circle cx="250" cy="110" r="38" fill="#9D7BEA"/><path d="M80 300c0-70 40-110 70-110s60 30 64 70c10-50 40-84 76-84 44 0 80 50 80 124Z" fill="#6E5BB8"/></svg>
-        <figcaption>Foto kommer: kollegor som lyckas tillsammans.</figcaption>
-      </figure>
+      <figure class="shot"><img class="" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&amp;fit=crop&amp;q=68&amp;w=1200" srcset="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&amp;fit=crop&amp;q=68&amp;w=480 480w, https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&amp;fit=crop&amp;q=68&amp;w=800 800w, https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&amp;fit=crop&amp;q=68&amp;w=1200 1200w, https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&amp;fit=crop&amp;q=68&amp;w=1600 1600w, https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&amp;fit=crop&amp;q=68&amp;w=2400 2400w" sizes="(min-width: 900px) 45vw, 100vw" alt="Tre kollegor skrattar tillsammans vid ett bord." width="1600" height="1067" loading="lazy" decoding="async"></figure>
     </div>
 
     <div class="offer" data-only="falt">
@@ -169,21 +125,16 @@
         </ul>
         <div class="cta-row">
           <a class="btn btn-main" href="#boka">Boka 30 minuter</a>
-          <a class="btn btn-ghost" href="#forsta-steget">Läs om första steget</a>
+          <a class="btn btn-line" href="#forsta-steget">Läs om första steget</a>
         </div>
         <button type="button" class="swap" data-choose="kontor">Vi jobbar mest på kontor. Byt väg.</button>
       </div>
-      <figure class="slot slot-photo">
-        <svg viewBox="0 0 400 300" aria-hidden="true"><rect width="400" height="300" fill="#FBF1D2"/><circle cx="300" cy="80" r="46" fill="#F6C945"/><circle cx="170" cy="130" r="38" fill="#6E5BB8"/><path d="M70 300c0-80 44-124 100-124s100 44 100 124Z" fill="#4B3A96"/></svg>
-        <figcaption>Foto kommer: en VD med tid över.</figcaption>
-      </figure>
+      <figure class="shot"><img class="" src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&amp;fit=crop&amp;q=68&amp;w=1200" srcset="https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&amp;fit=crop&amp;q=68&amp;w=480 480w, https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&amp;fit=crop&amp;q=68&amp;w=800 800w, https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&amp;fit=crop&amp;q=68&amp;w=1200 1200w, https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&amp;fit=crop&amp;q=68&amp;w=1600 1600w, https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&amp;fit=crop&amp;q=68&amp;w=2400 2400w" sizes="(min-width: 900px) 45vw, 100vw" alt="En elektriker i hjälm arbetar vid ett elskåp." width="1600" height="1067" loading="lazy" decoding="async"></figure>
     </div>
-
   </div>
 </section>
 
-<!-- FÖRSTA STEGET -->
-<section class="mirror" id="forsta-steget" aria-labelledby="h-spegel">
+<section class="mirror dark" id="forsta-steget" aria-labelledby="h-spegel">
   <div class="wrap">
     <p class="kicker">Första steget för alla</p>
     <h2 id="h-spegel">Ledningsgruppens spegel</h2>
@@ -204,66 +155,36 @@
   </div>
 </section>
 
-<!-- MODELLEN -->
 <section class="model" id="modellen" aria-labelledby="h-modell">
-  <div class="wrap">
-    <h2 id="h-modell">Fem steg före AI</h2>
-    <p class="lead">Min modell. Ett steg i taget.</p>
-    <div class="stage">
-      <div class="stairs js-tilt" role="img" aria-label="Skiss av modellen Fem steg före AI som en trappa i fem steg. Steg två heter Frigör.">
-        <div class="stair s1"><b>1</b></div>
-        <div class="stair s2 is-on"><b>2</b><span>Frigör</span></div>
-        <div class="stair s3"><b>3</b></div>
-        <div class="stair s4"><b>4</b></div>
-        <div class="stair s5"><b>5</b></div>
-      </div>
+  <div class="wrap split">
+    <div>
+      <h2 id="h-modell">Fem steg före AI</h2>
+      <p class="lead">Min modell. Ett steg i taget. Steg två heter Frigör.</p>
     </div>
-    <p class="note">Bara plats för modell om vad man har tänkt.</p>
+    <div class="ph ph-wide"><svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><line x1="0" y1="0" x2="100" y2="100"/><line x1="100" y1="0" x2="0" y2="100"/></svg><span>Bara plats för modell om vad man har tänkt.</span></div>
   </div>
 </section>
 
-<!-- KROKEN -->
-<section class="hook" aria-labelledby="h-krok">
-  <div class="pan" aria-hidden="true">
-    <svg class="pan-svg js-pan" viewBox="0 0 2400 600" preserveAspectRatio="xMidYMid slice" focusable="false">
-      <defs><linearGradient id="g-dusk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2A1F55"/><stop offset=".6" stop-color="#6E5BB8"/><stop offset="1" stop-color="#F3B98A"/></linearGradient></defs>
-      <rect width="2400" height="600" fill="url(#g-dusk)"/>
-      <circle cx="1700" cy="330" r="60" fill="#FBD979"/>
-      <path d="M0 400c200-60 420-70 640-30 220 40 420 30 640-20s460-60 680-10c160 36 300 40 440 20v240H0Z" fill="#4B3A96"/>
-      <path d="M0 470c240-50 520-50 780-10s520 40 780-10 560-50 840 10v140H0Z" fill="#2F5E45"/>
-      <path d="M0 540c300-40 620-40 920-10s600 30 900-10 400-20 580 0v80H0Z" fill="#1F4433"/>
-    </svg>
-  </div>
+<section class="hook dark" aria-labelledby="h-krok">
+  <div class="bleed" aria-hidden="true"><img class="bleed-img pan-img js-pan" src="https://images.unsplash.com/photo-1639941960474-6f276b38c8be?auto=format&amp;fit=crop&amp;q=68&amp;w=1200" srcset="https://images.unsplash.com/photo-1639941960474-6f276b38c8be?auto=format&amp;fit=crop&amp;q=68&amp;w=480 480w, https://images.unsplash.com/photo-1639941960474-6f276b38c8be?auto=format&amp;fit=crop&amp;q=68&amp;w=800 800w, https://images.unsplash.com/photo-1639941960474-6f276b38c8be?auto=format&amp;fit=crop&amp;q=68&amp;w=1200 1200w, https://images.unsplash.com/photo-1639941960474-6f276b38c8be?auto=format&amp;fit=crop&amp;q=68&amp;w=1600 1600w, https://images.unsplash.com/photo-1639941960474-6f276b38c8be?auto=format&amp;fit=crop&amp;q=68&amp;w=2400 2400w" sizes="130vw" alt="" width="1600" height="1067" loading="lazy" decoding="async"></div>
   <div class="wrap hook-text">
-    <blockquote>
-      <p id="h-krok">”Väldigt spännande, men lite läskigt också.”</p>
-    </blockquote>
+    <blockquote><p id="h-krok">”Väldigt spännande, men lite läskigt också.”</p></blockquote>
     <p class="lead">Så brukar det låta om AI. Då hjälper det att ledningen går före.</p>
     <a class="btn btn-main" href="#boka">Boka 30 minuter</a>
   </div>
 </section>
 
-<!-- BEVIS: PLATSER -->
 <section class="proof" aria-labelledby="h-bevis">
   <div class="wrap">
     <h2 id="h-bevis">Vad det ger</h2>
     <div class="duo">
-      <div class="slot slot-soon">
-        <svg viewBox="0 0 120 80" width="120" height="80" aria-hidden="true"><rect x="8" y="44" width="18" height="28" rx="5" fill="#CDBEF8"/><rect x="36" y="30" width="18" height="42" rx="5" fill="#9D7BEA"/><rect x="64" y="18" width="18" height="54" rx="5" fill="#5630B4"/><rect x="92" y="8" width="18" height="64" rx="5" fill="#F6C945"/></svg>
-        <h3>Räkneexempel i timmar och kronor</h3>
-        <p>Exempel kommer.</p>
-      </div>
-      <div class="slot slot-soon">
-        <svg viewBox="0 0 120 80" width="120" height="80" aria-hidden="true"><path d="M14 60V38c0-14 8-24 24-26v10c-7 2-10 6-10 12h10v26Zm52 0V38c0-14 8-24 24-26v10c-7 2-10 6-10 12h10v26Z" fill="#CDBEF8"/></svg>
-        <h3>Kunder om samarbetet</h3>
-        <p>Citat kommer.</p>
-      </div>
+      <div class="soon"><div class="ph "><svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><line x1="0" y1="0" x2="100" y2="100"/><line x1="100" y1="0" x2="0" y2="100"/></svg><span>Exempel kommer.</span></div><h3>Räkneexempel i timmar och kronor</h3></div>
+      <div class="soon"><div class="ph "><svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><line x1="0" y1="0" x2="100" y2="100"/><line x1="100" y1="0" x2="0" y2="100"/></svg><span>Citat kommer.</span></div><h3>Kunder om samarbetet</h3></div>
     </div>
   </div>
 </section>
 
-<!-- LEDARTEST -->
-<section class="test" id="ledartest" aria-labelledby="h-test">
+<section class="test dark" id="ledartest" aria-labelledby="h-test">
   <div class="wrap test-box">
     <div>
       <p class="kicker">Gratis ledartest</p>
@@ -274,7 +195,7 @@
       <label for="notis-mejl">Din mejladress</label>
       <div class="notify-row">
         <input id="notis-mejl" name="email" type="email" autocomplete="email" inputmode="email" placeholder="namn@foretag.se" required>
-        <button class="btn btn-ink" type="submit">Säg till när testet är klart</button>
+        <button class="btn btn-main" type="submit">Säg till när testet är klart</button>
       </div>
       <p class="form-msg" role="status" aria-live="polite"></p>
       <p class="fine">Adressen används bara för det här. Ingen spårning.</p>
@@ -282,31 +203,25 @@
   </div>
 </section>
 
-<!-- OM HANS -->
 <section class="about" id="hans" aria-labelledby="h-hans">
   <div class="wrap about-grid">
-    <figure class="slot slot-portrait">
-      <svg viewBox="0 0 300 380" aria-hidden="true"><rect width="300" height="380" fill="#EAE4FB"/><circle cx="150" cy="140" r="62" fill="#9D7BEA"/><path d="M30 380c0-100 54-156 120-156s120 56 120 156Z" fill="#5630B4"/></svg>
-      <figcaption>Foto på Hans kommer.</figcaption>
-    </figure>
+    <div class="ph ph-tall"><svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><line x1="0" y1="0" x2="100" y2="100"/><line x1="100" y1="0" x2="0" y2="100"/></svg><span>Foto på Hans kommer.</span></div>
     <div>
       <h2 id="h-hans">Hans Nyblom</h2>
       <p class="lead">Rådgivare och bollplank till VD.</p>
       <p>Föreläsare och affärsutvecklare i nära 20 år. Jag gör det krångliga enkelt, ofta i en bild.</p>
-      <ul class="stages" aria-label="Scener">
-        <li>Almedalen</li><li>Nordbygg</li><li>Elmässan</li>
-      </ul>
+      <ul class="stages" aria-label="Scener"><li>Almedalen</li><li>Nordbygg</li><li>Elmässan</li></ul>
       <a class="btn btn-main" href="#boka">Boka 30 minuter</a>
     </div>
   </div>
 </section>
 
-<!-- MER -->
 <section class="more" id="mer" aria-labelledby="h-mer">
   <div class="wrap">
     <h2 id="h-mer">Mer från Proximus</h2>
     <ul class="tiles">
       <li><span class="tile"><b>Föreläsningar</b><i>Sida kommer</i></span></li>
+      <li><span class="tile"><b>Trendanalys</b><i>Sida kommer</i></span></li>
       <li><span class="tile"><b>Utbildning via partner</b><i>Sida kommer</i></span></li>
       <li><span class="tile"><b>AI projekt via partner</b><i>Sida kommer</i></span></li>
       <li><span class="tile"><b>Föredrag på film</b><i>Sida kommer</i></span></li>
@@ -321,16 +236,15 @@
   </div>
 </section>
 
-<!-- BOKA -->
-<section class="book" id="boka" aria-labelledby="h-boka">
-  <div class="wrap book-box">
+<section class="book dark" id="boka" aria-labelledby="h-boka">
+  <div class="wrap">
     <h2 id="h-boka">Boka 30 minuter</h2>
     <p class="lead">Ett samtal med mig. Du berättar läget. Jag säger vad jag skulle börja med.</p>
-    <p class="founders on-dark"><strong>Grundarkund.</strong> De tre första kunderna får låst pris och mätning före och efter.</p>
-    <div class="slot slot-form">Bokningsformuläret kopplas in här.</div>
+    <p class="founders"><strong>Grundarkund.</strong> De tre första kunderna får låst pris och mätning före och efter.</p>
+    <div class="slot-form">Bokningsformuläret kopplas in här.</div>
     <div class="cta-row">
       <a class="btn btn-main" href="tel:+46762068081">Ring +46 76 206 80 81</a>
-      <a class="btn btn-light js-mail" href="#boka" data-u="hans.nyblom" data-d="proximus.se" data-label="Mejla ">Mejla Hans</a>
+      <a class="btn btn-line js-mail" href="#boka" data-u="hans.nyblom" data-d="proximus.se" data-label="Mejla ">Mejla Hans</a>
     </div>
     <noscript><p>Mejl: hans.nyblom snabel a proximus.se</p></noscript>
   </div>
@@ -338,12 +252,9 @@
 
 </main>
 
-<footer class="foot">
+<footer class="foot dark">
   <div class="wrap foot-grid">
-    <div>
-      <p class="foot-name">Proximus Sverige AB</p>
-      <p>Hans Nyblom</p>
-    </div>
+    <div><p class="foot-name">Proximus Sverige AB</p><p>Hans Nyblom</p></div>
     <ul class="foot-contact">
       <li><a href="tel:+46762068081">+46 76 206 80 81</a></li>
       <li><a class="js-mail" href="#boka" data-u="hans.nyblom" data-d="proximus.se" data-show="1">Mejla Hans</a></li>
