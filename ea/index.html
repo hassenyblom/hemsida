@@ -61,8 +61,8 @@
   <div class="wrap ea-split">
     <div>
       <p class="kicker">Din morgonrutin</p>
-      <h2 id="h-morgon">En prompt som jobbar innan du kommer.</h2>
-      <p class="lead">Den fångar det som faller mellan stolarna. Schemalägg den, så körs den varje morgon.</p>
+      <h2 id="h-morgon">Morgonprompten – för en bättre dag!</h2>
+      <p class="lead">Den ger dig och din chef helheten innan dagen börjar. Schemalägg den, så körs den varje morgon.</p>
       <ol class="ea-how">
         <li>Öppna Copilot Chat på webben eller i datorn.</li>
         <li>Klistra in prompten och kör den en gång.</li>
@@ -72,16 +72,22 @@
       <p class="fine">Kräver licens för Microsoft 365 Copilot, så att Copilot ser din mejl och kalender. <a href="https://support.microsoft.com/microsoft-365-copilot/schedule-your-most-used-copilot-prompts" rel="noopener noreferrer" target="_blank">Microsofts guide</a>.</p>
     </div>
     <div class="ea-prompt">
-      <pre id="p-morgon">Agera som min strategiska assistent. Gå igenom mina mejl sedan i går eftermiddag och dagens möten i kalendern.
+      <pre id="p-morgon">Agera som min strategiska chefsassistent, med helhetssyn på både mitt och min chefs arbete. Utgå från ledningsgruppens mål och prioriteringar.
 
-Sortera det i tre grupper:
-1. Kräver beslut eller svar i dag
-2. Kräver min eller min chefs input, men kan vänta
-3. Ren information
+Gå igenom mina mejl sedan i går eftermiddag, Teams-chattar och kalendern för i dag och i morgon, även min chefs där jag har tillgång.
 
-Lista sedan de tre viktigaste riskerna eller möjligheterna inför dagens möten, och vilka dokument jag ska läsa innan.
+Ge mig en morgonbriefing med de här rubrikerna:
 
-Håll det kort, högst en skärmsida.</pre>
+1. Dagens fokus: vad som är viktigast i dag och varför, kopplat till ledningsgruppens mål.
+2. Beslut och svar i dag: allt som kräver beslut eller svar från mig eller min chef.
+3. Kan vänta: det som kräver input men inte i dag, med förslag på när.
+4. Dagens möten: syfte, vad vi ska ha med oss och vilka dokument som ska läsas innan.
+5. Uppföljning: löften, deadlines och åtgärder som riskerar att falla mellan stolarna.
+6. Risker och möjligheter: allt som jag och min chef bör känna till, viktigast först.
+7. Smartare i dag: vad jag kan ta bort, förenkla eller delegera.
+
+Avsluta med en kort lista: det här gör jag före lunch.
+Skriv kort och tydligt.</pre>
       <button type="button" class="btn btn-main js-copy" data-copy="p-morgon">Kopiera prompten</button>
       <p class="copy-msg" role="status" aria-live="polite"></p>
     </div>
@@ -126,7 +132,7 @@ Håll det kort, högst en skärmsida.</pre>
     <p class="kicker">Hur strategiskt används ny kunskap?</p>
     <h2 id="h-trappan">Trappan</h2>
     <p class="lead">Var står er ledningsgrupp i dag?</p>
-    <ol class="ea-stairs">
+    <ol class="ea-stairs" aria-label="Trappan i åtta steg">
       <li><b>Berättar</b><span>Har hört om det nya och berättar för andra.</span></li>
       <li><b>Visar</b><span>Har lärt sig det och visar hur det fungerar.</span></li>
       <li><b>Presterar</b><span>Gör sin uppgift bättre med det nya.</span></li>
@@ -134,9 +140,10 @@ Håll det kort, högst en skärmsida.</pre>
       <li><b>Möjliggör</b><span>Skapar förutsättningar för att andra ska lyckas.</span></li>
       <li><b>Ifrågasätter</b><span>Utgår från målet och frågar vilket arbete som inte behövs alls.</span></li>
       <li><b>Omdefinierar</b><span>Föreslår en ny väg mot målet, till exempel att lägga ut, förenkla eller bygga agenter.</span></li>
+      <li><b>Framtidsanpassar</b><span>Anpassar erbjudande, verksamhet och målbild efter hur förutsättningarna bedöms vara längre fram.</span></li>
     </ol>
     <p class="ea-engine"><b>Samma fem frågor på varje steg:</b> Varför? Ta bort. Förenkla. Snabba upp. Automatisera.</p>
-    <p class="fine">Steg ett till fem gör er bättre inom systemet. På steg sex och sju ändrar ni systemet.</p>
+    <p class="fine">Steg ett till fem gör er bättre inom systemet. På steg sex till åtta ändrar ni systemet.</p>
   </div>
 </section>
 
@@ -180,7 +187,10 @@ Håll det kort, högst en skärmsida.</pre>
     <p class="lead">Du, din chef och jag. Vi pratar om var ni står och vad som ger störst effekt först.</p>
     <div class="cta-row">
       <a class="btn btn-main js-mail" href="#boka" data-u="hans.nyblom" data-d="proximus.se" data-subject="Samtal med Hans och min chef efter EA Summit" data-body="Hej Hans!%0A%0AJag var på AI-labbet på EA Summit. Jag och min chef vill boka 30 minuter med dig.%0A%0AMitt namn:%0AMin chef:%0AFöretag:%0AFörslag på tider:%0A">Boka via mejl</a>
-      <a class="btn btn-line" href="tel:+46762068081">Ring +46 76 206 80 81</a>
+      <span class="ea-call">
+        <span class="ea-bubble" aria-hidden="true">Så trevligt att höra din röst!</span>
+        <a class="btn btn-line" href="tel:+46762068081">Ring +46 76 206 80 81</a>
+      </span>
     </div>
     <p class="fine ea-addr">Mejl: <a class="js-mail" href="#boka" data-u="hans.nyblom" data-d="proximus.se" data-show="1">visas här</a></p>
     <noscript><p>Mejl: hans.nyblom snabel a proximus.se</p></noscript>
