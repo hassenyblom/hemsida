@@ -16,7 +16,7 @@ Hittades inte: tråden "Landningssida för vd-möten" och dokument för Block 4 
 
 1. Enda målet: en vd eller vd-assistent bokar 30 minuter. Knappen heter "Boka 30 minuter".
 2. Målgrupp: vd och ledningsgrupp i företag med 50 till 500 anställda.
-3. Huvudrubrik: "Ni använder redan AI." Kärnmening om timmar och kronor, och att vi börjar med ledningsgruppen.
+3. Huvudrubrik: "Ni använder redan AI." Kärnmening: jag hjälper er se var AI gör mest nytta först, och vi börjar med ledningsgruppen. Lova inte timmar och kronor.
 4. Hans roll: rådgivare och bollplank till vd. Inte coach, projektledare eller HR.
 5. Vägval: kontor leder till Effekt 90, fält leder till VD först.
 6. Första steget för alla: Ledningsgruppens spegel, 45 000 kr exklusive moms.
