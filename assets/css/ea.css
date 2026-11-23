@@ -1,0 +1,91 @@
+/* Undersidan /ea, EA Summit. Bygger på site.css. */
+.ea-hero{padding-block:clamp(4rem,12vw,8rem)}
+.ea-hero h1{font-size:clamp(3.5rem,14vw,8.5rem)}
+.ea-block{padding-block:clamp(4rem,10vw,7.5rem)}
+.ea-grey{background:#F2F2F2}
+.ea-split{display:grid;gap:2.5rem;align-items:start}
+@media (min-width:900px){.ea-split{grid-template-columns:1fr 1fr;gap:5rem}}
+.ea-split>div{min-width:0}
+
+.ea-how{counter-reset:h;display:grid;margin-top:2rem}
+.ea-how li{counter-increment:h;display:grid;grid-template-columns:2.25rem 1fr;gap:.5rem;padding:.8rem 0;border-top:1px solid var(--line);line-height:1.4}
+.ea-how li:last-child{border-bottom:1px solid var(--line)}
+.ea-how li::before{content:counter(h);font-family:var(--display);font-weight:600;color:var(--cobalt)}
+.ea-block .fine{margin-top:1.25rem}
+.ea-block .fine a{color:var(--cobalt)}
+
+pre{margin:0;font-family:var(--body);white-space:pre-wrap;overflow-wrap:anywhere}
+.ea-prompt{background:var(--black);color:var(--white);padding:clamp(1.25rem,4vw,2.25rem)}
+.ea-prompt pre{font-size:1.0625rem;line-height:1.55;margin-bottom:1.5rem}
+.ea-prompt .btn-main{background:var(--cobalt-lit)}
+.copy-msg{margin-top:.75rem;min-height:1.6em;color:var(--cobalt-pale)}
+
+.ea-cards{display:grid;gap:.75rem;margin-top:2.25rem}
+@media (min-width:760px){.ea-cards{grid-template-columns:1fr 1fr}}
+@media (min-width:1100px){.ea-cards{grid-template-columns:repeat(3,1fr)}}
+.ea-cards li{display:flex;flex-direction:column;gap:1rem;padding:1.25rem;background:var(--white);border:1px solid var(--line)}
+.ea-cards pre{font-size:1.0625rem;line-height:1.45;flex:1}
+.ea-tag{font-size:.9375rem;color:var(--grey)}
+.ea-copy{align-self:flex-start;min-height:2.75rem;padding:.4rem 1rem;border:1px solid var(--black);background:var(--white);font-family:var(--display);font-weight:500;font-size:1rem}
+.ea-copy:hover{background:var(--black);color:var(--white)}
+.ea-copy.is-done{background:var(--cobalt);border-color:var(--cobalt);color:var(--white)}
+
+.ea-tips{counter-reset:t;display:grid;margin-top:2.25rem}
+@media (min-width:900px){.ea-tips{grid-template-columns:1fr 1fr;column-gap:3rem}}
+.ea-tips li{counter-increment:t;display:grid;grid-template-columns:2.5rem 1fr;gap:.25rem;padding:1rem 0;border-top:1px solid var(--line);line-height:1.4}
+.ea-tips li::before{content:counter(t);font-family:var(--display);font-weight:600;font-size:1.25rem;color:var(--cobalt)}
+.ea-tips b{font-family:var(--display);font-weight:600}
+.ea-quote{margin-top:2.5rem;padding-left:1rem;border-left:3px solid var(--cobalt);font-family:var(--display);font-weight:500;font-size:clamp(1.25rem,3.4vw,1.75rem);line-height:1.3;letter-spacing:-.02em;max-width:34ch}
+
+.ea-stairs{display:grid;gap:.4rem;margin-top:2.5rem;counter-reset:st}
+.ea-stairs li{counter-increment:st;display:grid;gap:.3rem;padding:1rem 1.1rem;line-height:1.35;color:#000}
+.ea-stairs li::before{content:counter(st);font-family:var(--display);font-weight:600;font-size:.9375rem;opacity:.75}
+.ea-stairs b{font-family:var(--display);font-weight:600;font-size:1.25rem;letter-spacing:-.02em}
+.ea-stairs span{font-size:1rem}
+.ea-stairs li:nth-child(1){background:#E8EEFC}
+.ea-stairs li:nth-child(2){background:#C9D8FB}
+.ea-stairs li:nth-child(3){background:#A3BCF8}
+.ea-stairs li:nth-child(4){background:#6F95F2}
+.ea-stairs li:nth-child(5){background:#1F5FE0;color:#fff}
+.ea-stairs li:nth-child(6){background:#1648B8;color:#fff}
+.ea-stairs li:nth-child(7){background:#0B2F86;color:#fff}
+.ea-stairs li:nth-child(8){background:#C6F432}
+@media (min-width:640px) and (max-width:899px){
+  .ea-stairs li{margin-left:calc((var(--i,0)) * 1.25rem)}
+  .ea-stairs li:nth-child(2){--i:1}.ea-stairs li:nth-child(3){--i:2}.ea-stairs li:nth-child(4){--i:3}
+  .ea-stairs li:nth-child(5){--i:4}.ea-stairs li:nth-child(6){--i:5}.ea-stairs li:nth-child(7){--i:6}.ea-stairs li:nth-child(8){--i:7}
+}
+@media (min-width:900px){
+  .ea-stairs{grid-template-columns:repeat(8,1fr);align-items:end;gap:.3rem}
+  .ea-stairs li{align-content:start;padding:.9rem .75rem}
+  .ea-stairs li:nth-child(1){min-height:10rem}.ea-stairs li:nth-child(2){min-height:12rem}.ea-stairs li:nth-child(3){min-height:14rem}
+  .ea-stairs li:nth-child(4){min-height:16rem}.ea-stairs li:nth-child(5){min-height:18rem}.ea-stairs li:nth-child(6){min-height:20rem}
+  .ea-stairs li:nth-child(7){min-height:22rem}.ea-stairs li:nth-child(8){min-height:24rem}
+  .ea-stairs b{font-size:1rem;overflow-wrap:anywhere;hyphens:auto}.ea-stairs span{font-size:.875rem}
+}
+.ea-engine{margin-top:2rem;padding:1.1rem 1.25rem;background:var(--cobalt-lit);line-height:1.4}
+.ea-engine b{font-family:var(--display);font-weight:600}
+.dark .ea-engine+.fine{color:var(--grey-lit)}
+
+.ea-offer{border:1px solid var(--black);padding:clamp(1.25rem,4vw,2.25rem)}
+.ea-offer-name{font-family:var(--display);font-weight:600;font-size:clamp(1.75rem,5vw,2.5rem);letter-spacing:-.035em;line-height:1.05}
+.ea-price{margin-top:1.5rem}
+.ea-price strong{font-family:var(--display);font-weight:600;font-size:clamp(2.25rem,7vw,3.25rem);letter-spacing:-.04em}
+
+.ea-links{display:grid;gap:.75rem;margin-top:2.25rem}
+@media (min-width:760px){.ea-links{grid-template-columns:1fr 1fr}}
+.ea-links a{display:grid;gap:.4rem;height:100%;padding:1.25rem;background:var(--white);border:1px solid var(--line);text-decoration:none}
+.ea-links a:hover{border-color:var(--black)}
+.ea-links b{font-family:var(--display);font-weight:600;font-size:1.25rem;text-decoration:underline;text-underline-offset:.25em}
+.ea-links span{color:var(--grey)}
+
+.ea-addr{margin-top:1.5rem}
+.ea-addr a{color:var(--white)}
+
+/* Pratbubbla vid telefonknappen */
+.ea-call{position:relative;display:inline-flex;flex-direction:column;align-items:flex-start;padding-top:4.25rem}
+.ea-bubble{position:absolute;top:0;left:0;white-space:nowrap;padding:.65rem 1rem;background:var(--cobalt-lit);color:#fff;font-family:var(--display);font-weight:500;font-size:1rem;line-height:1.2;border-radius:1.25rem}
+.ea-bubble::after{content:"";position:absolute;left:1.5rem;bottom:-.6rem;border-left:.7rem solid transparent;border-right:.2rem solid transparent;border-top:.7rem solid var(--cobalt-lit)}
+#boka .cta-row{align-items:flex-end}
+
+#h-morgon{font-size:clamp(2.25rem,4.6vw,3.75rem);overflow-wrap:anywhere}
