@@ -89,3 +89,8 @@ pre{margin:0;font-family:var(--body);white-space:pre-wrap;overflow-wrap:anywhere
 #boka .cta-row{align-items:flex-end}
 
 #h-morgon{font-size:clamp(2.25rem,4.6vw,3.75rem);overflow-wrap:anywhere}
+
+.ea-note{margin-top:1.5rem;padding:1rem 1.1rem;background:#EEF3FE;border-left:3px solid var(--cobalt);line-height:1.45}
+.ea-note b{font-family:var(--display);font-weight:600}
+.ea-bonus{margin-top:2rem;padding:1.1rem 1.25rem;background:#C6F432;line-height:1.45;max-width:46rem}
+.ea-bonus b{font-family:var(--display);font-weight:600}
